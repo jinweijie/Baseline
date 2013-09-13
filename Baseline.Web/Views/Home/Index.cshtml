@@ -1,0 +1,43 @@
+﻿@model List<Baseline.DomainModel.User>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <ul>
+            @foreach (var user in Model)
+            {
+                <li>User: @user.UserName </li>
+                <li>
+                    <h3>Roles</h3>
+                    <ul>
+                        @foreach (var role in user.Roles)
+                        {
+                            <li>Role: @role.Name</li>
+                        }
+                    </ul>
+                </li>
+                <li>
+                    <h3>Addresses</h3>
+                    <ul>
+                    @foreach (var address in user.Addresses)
+                    {
+                        <li>Address: @address.AddressLine1 @address.AddressLine2</li>
+                    }
+                </ul>
+                </li>
+               
+            }
+        </ul>
+    </div>
+</body>
+</html>
