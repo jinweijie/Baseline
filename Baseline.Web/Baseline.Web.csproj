@@ -196,8 +196,8 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <None Include="Properties\PublishProfiles\Baselin.Web_PROD.pubxml" />
-    <None Include="Properties\PublishProfiles\Baseline.Web.UAT.pubxml" />
+    <None Include="Properties\PublishProfiles\Baseline.Web_PROD.pubxml" />
+    <None Include="Properties\PublishProfiles\Baseline.Web_UAT.pubxml" />
     <None Include="Properties\PublishProfiles\Baseline.Web_DEV.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
@@ -227,6 +227,15 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <None Include="Web.DEV.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.PROD.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.UAT.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
