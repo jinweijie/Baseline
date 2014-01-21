@@ -207,6 +207,7 @@
     <None Include="Properties\PublishProfiles\Baseline.Web_Azure.pubxml" />
     <None Include="Web.AZURE.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
     <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
